@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabele - colspan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">Poniedziałek</th>
+            <th scope="col">Wtorek</th>
+            <th scope="col">Środa</th>
+            <th scope="col">Czwartek</th>
+            <th scope="col">Piątek</th>
+        </tr>
+        <tr>
+            <th scope="row">18:00</th>
+            <td>Kręgle</td>
+            <td>Polo</td>
+            <td colspan="2">Golf</td>
+            <td>Krykiet</td>
+        </tr>
+        <tr>
+            <th scope="row">20:00</th>
+            <td colspan="4">Basen i Sauna</td>
+            <td>Impreza</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!-- HTML <tr> tworzy wiersz -->
+<!-- HTML <td> tworzy komórkę tabeli -->
+<!-- HTML <th> tworzy komórkę nagłówka -->
+
+<!-- row - Oznacza, że nagłówek ma zakres w obrębie całego wiersza tabeli. -->
+<!-- col - Oznacza, że nagłówek ma zakres w obrębie całej kolumny tabeli. -->
+<!-- rowgroup - Oznacza, że nagłówek ma zakres w obrębie całego wiersza lub grupy wiersz -->
