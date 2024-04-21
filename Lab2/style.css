@@ -10,7 +10,6 @@ body {
 }
 
 header {
-    position: fixed;
     width: 100%;
     background-color: rgba(211, 211, 211, 0.9);
     top: 0;
@@ -31,7 +30,17 @@ header h1 {
 }
 
 main {
-    padding-top: 100px;
+    padding-top: 25px;
+
+}
+
+#about_me {
+    padding-bottom: 0px
+}
+
+#description {
+    padding-bottom: 0px;
+    padding-top: 0px
 }
 
 header nav ul {
@@ -81,6 +90,7 @@ article section {
 
 .article-element {
     width: 50%;
+    padding-top: 25px;
 }
 
 h1 {
