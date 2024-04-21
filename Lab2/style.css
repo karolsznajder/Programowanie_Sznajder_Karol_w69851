@@ -1,11 +1,12 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
+    background-color: #f2f2f2;
 }
 
 header {
@@ -20,8 +21,8 @@ header {
     box-shadow: 0 0 10px 2px #aaa;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 120px;
     padding-right: 120px;
+    padding-left: 120px;
     z-index: 100;
 }
 
@@ -30,7 +31,10 @@ header nav ul {
     display: flex;
     align-items: center;
     gap: 20px;
+}
 
+.second-page {
+    color: blue;
 }
 
 header nav ul li {
@@ -42,12 +46,48 @@ header nav ul li {
     color: red;
 }
 
+article,
+section {
+    display: block;
+    margin: 0 120px;
+    font-size: 20px;
+    max-width: 800px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+article {
+    position: relative;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 120px;
+}
+
+.article-element {
+    width: 50%;
+}
+
 h1 {
-    font-size: 50px
+    font-size: 50px;
 }
 
 h2 {
     font-size: 30px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin-top: 8px;
+    margin-bottom: 16px;
 }
 
 table, th, td {
@@ -56,7 +96,8 @@ table, th, td {
 }
 
 table {
-    width: 50%;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 th, td {
@@ -72,4 +113,14 @@ th, td {
     width: 250px;
     height: auto;
     border-radius: 5%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
