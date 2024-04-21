@@ -15,3 +15,9 @@ th, td {
 .table {
     width: 100%;
 }
+
+.guinea-pig {
+    width: 250px;
+    height: auto;
+    border-radius: 5%;
+}
