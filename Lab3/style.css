@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.9);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 0 0 10px 2px #aaa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 120px;
+    padding-left: 120px;
+    z-index: 100;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    padding-top: 25px;
+
+}
+
+#about_me {
+    padding-bottom: 0px
+}
+
+#description {
+    padding-bottom: 0px;
+    padding-top: 0px
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.second-page {
+    color: blue;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-home-link {
+    color: red;
+}
+
+article,
+section {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 20px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+article {
+    position: relative;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 120px;
+}
+
+article section {
+    margin-bottom: 0;
+}
+
+.article-element {
+    width: 50%;
+    padding-top: 25px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 150px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+#guinea-pig {
+   margin-bottom: 100px;
+   text-align: center;
+   padding-top: 25px;
+   padding-bottom: 150px;
+   padding-left: 120px;
+   padding-right: 120px;
+}
+
+#guinea-pig img {
+    width: 500px;
+    height: auto;
+    border-radius: 5%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
