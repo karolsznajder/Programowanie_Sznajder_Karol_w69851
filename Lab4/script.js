@@ -29,15 +29,28 @@ console.log("Happy New Year!");
 
 // Zadanie 3
 
-function openWin() {
-    let wiek = prompt("Podaj ile masz lat: ")
-    if (wiek >= 18)
-        window.open("", "_self")
-    else
-        window.open("https://www.gry.pl/")
-}
+// function openWin() {
+//     let wiek = prompt("Podaj ile masz lat: ")
+//     if (wiek >= 18)
+//         window.open("", "_self")
+//     else
+//         window.open("https://www.gry.pl/")
+// }
 
-openWin();
+// openWin();
 
 // Zadanie 4
+
+function changeColor(clickedButton) {
+    const buttons = document.querySelectorAll('.button');
+  
+    buttons.forEach(button => {
+      if (button !== clickedButton) {
+        button.classList.remove('active');
+      }
+    });
+  
+    clickedButton.classList.toggle('active');
+
+}
 
