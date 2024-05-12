@@ -54,3 +54,73 @@ function changeColor(clickedButton) {
 
 }
 
+// Zadanie 5
+
+function toggleVisibility() {
+  var element = document.getElementById('hiddenElement');
+  if (element.style.display === 'none') {
+      element.style.display = 'block';
+  } else {
+      element.style.display = 'none';
+  }
+}
+
+// Zadanie 6
+
+function addItem() {
+  var input = document.getElementById('itemInput');
+  var newItem = input.value;
+  if (newItem) {
+      var listItem = document.createElement('li');
+      listItem.textContent = newItem;
+      document.getElementById('itemList').appendChild(listItem);
+      input.value = '';
+  }
+}
+
+// Zadanie 7
+
+function addToTable() {
+  var firstName = document.getElementById('firstName').value;
+  var lastName = document.getElementById('lastName').value;
+  if (firstName && lastName) {
+      var table = document.getElementById('tableBody');
+      var row = table.insertRow();
+      var firstNameCell = row.insertCell(0);
+      var lastNameCell = row.insertCell(1);
+      firstNameCell.textContent = firstName;
+      lastNameCell.textContent = lastName;
+      document.getElementById('firstName').value = '';
+      document.getElementById('lastName').value = '';
+  }
+}
+
+// Zadanie 8
+
+function convertToFahrenheit() {
+  var celsius = document.getElementById('temperatureInput').value;
+  var fahrenheit = celsius * 9/5 + 32;
+  document.getElementById('result').textContent = `${fahrenheit} °F`;
+}
+
+function convertToCelsius() {
+  var fahrenheit = document.getElementById('temperatureInput').value;
+  var celsius = (fahrenheit - 32) * 5/9;
+  document.getElementById('result').textContent = `${celsius} °C`;
+}
+
+// Zadanie 10
+
+function calculate(operation) {
+  var num1 = parseFloat(document.getElementById('num1').value);
+  var num2 = parseFloat(document.getElementById('num2').value);
+  var result;
+  switch(operation) {
+      case '+': result = num1 + num2; break;
+      case '-': result = num1 - num2; break;
+      case '*': result = num1 * num2; break;
+      case '/': result = num1 / num2; break;
+      case '**': result = Math.pow(num1, num2); break;
+  }
+  document.getElementById('calcResult').textContent = "Wynik: " + result;
+}
