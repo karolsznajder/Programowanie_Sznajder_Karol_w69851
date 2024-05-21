@@ -9,18 +9,26 @@
 <body>
     <div class="container">
         <h1>Formularz rejestracyjny</h1>
-        <form action="#" method="post">
+        <form id="registrationForm" action="#" method="post">
             <label for="imie">Imię:</label>
             <input type="text" id="imie" name="imie" required>
+            <span class="error" id="imieError"></span>
 
             <label for="nazwisko">Nazwisko:</label>
             <input type="text" id="nazwisko" name="nazwisko" required>
+            <span class="error" id="nazwiskoError"></span>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
             
             <label for="haslo">Hasło:</label>
             <input type="password" id="haslo" name="haslo" minlength="8" required>
+            <span class="error" id="hasloError"></span>
+
+            <label for="powtorzHaslo">Powtórz hasło:</label>
+            <input type="password" id="powtorzHaslo" name="powtorzHaslo" required>
+            <span class="error" id="powtorzHasloError"></span>
 
             <label for="plec">Płeć:</label>
             <select name="plec" id="plec" required>
@@ -29,12 +37,15 @@
                 <option value="mezczyzna">Mężczyzna</option>
                 <option value="inna">Inna</option>
             </select>
+            <span class="error" id="plecError"></span>
             
             <label for="telefon">Telefon:</label>
-            <input type="tel" id="telefon" name="telefon" pattern="[0-9]{9}" required>
+            <input type="text" id="telefon" name="telefon" required>
+            <span class="error" id="telefonError"></span>
 
             <label for="data_urodzenia">Data urodzenia:</label>
             <input type="date" name="data_urodzenia" id="data_urodzenia" required>
+            <span class="error" id="dataUrodzeniaError"></span>
 
             <label for="kraj">Kraj:</label>
             <select name="kraj" id="kraj" required>
@@ -44,9 +55,34 @@
                 <option value="ukraina">Ukraina</option>
                 <option value="wielkabrytania">Wielka Brytania</option>
             </select>
+            <span class="error" id="krajError"></span>
+
+            <label for="wojewodztwo">Województwo:</label>
+            <select name="wojewodztwo" id="wojewodztwo" disabled required>
+                <option value="">Wybierz:</option>
+                <option value="mazowieckie">Mazowieckie</option>
+                <option value="malopolskie">Małopolskie</option>
+            </select>
+            <span class="error" id="wojewodztwoError"></span>
+
+            <label for="adresZamieszkania">Adres zamieszkania:</label>
+            <input type="text" id="adresZamieszkania" name="adresZamieszkania" disabled required>
+            <span class="error" id="adresZamieszkaniaError"></span>
+
+            <label for="adresKorespondencyjnyCheckbox">
+                <input type="checkbox" id="adresKorespondencyjnyCheckbox" name="adresKorespondencyjnyCheckbox" checked>
+                Adres korespondencyjny jest taki sam jak adres zamieszkania
+            </label>
+
+            <div id="adresKorespondencyjnyContainer">
+                <label for="adresKorespondencyjny">Adres korespondencyjny:</label>
+                <input type="text" id="adresKorespondencyjny" name="adresKorespondencyjny">
+                <span class="error" id="adresKorespondencyjnyError"></span>
+            </div>
 
             <button type="submit">Zarejestruj się</button>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

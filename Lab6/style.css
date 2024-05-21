@@ -2,11 +2,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: lightgray;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
 .container {
@@ -14,7 +15,9 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 400px;
+    max-width: 100%;
+    margin: 20px 0;
 }
 
 h1 {
@@ -49,4 +52,15 @@ button {
 
 button:hover {
     background-color: #4cae4c;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#adresKorespondencyjnyContainer {
+    display: none;
 }
