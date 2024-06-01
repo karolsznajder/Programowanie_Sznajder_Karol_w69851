@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz rejestracyjny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formularz rejestracyjny</h1>
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="login">Login:</label>
+        <input type="text" name="login" id="login" required minlength="5">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+        <label for="password">Hasło:</label>
+        <input type="password" name="password" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$
+        ">
+
+        <label for="confirmPassword">Powtórz hasło:</label>
+        <input type="password" name="confirmPassword" id="confirmPassword" required>
+
+        <button type="submit">Zarejestruj</button>
+
+    </form>
+</body>
+</html>

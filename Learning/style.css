@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif; /* Ustawia czcionkę na Arial lub, jeśli Arial nie jest dostępny, na czcionkę bezszeryfową */
+    margin: 20px; /* Dodaje margines o wielkości 20 pikseli wokół całego dokumentu */
+    padding: 20px; /* Dodaje wewnętrzne odstępy o wielkości 20 pikseli wewnątrz elementu body */
+    background-color: #f0f0f0; /* Ustawia kolor tła na jasnoszary */
+}
+
+h1 {
+    color: #333; /* Ustawia kolor tekstu nagłówka na ciemnoszary (#333333) */
+}
+
+form {
+    margin-bottom: 20px; /* Dodaje dolny margines o wielkości 20 pikseli pod formularzem */
+}
+
+label {
+    display: block; /* Ustawia elementy label jako blokowe, co sprawia, że zajmują całą dostępną szerokość */
+    margin-top: 10px; /* Dodaje górny margines o wielkości 10 pikseli, aby oddzielić etykiety od innych elementów */
+}
+
+input, select, button {
+    padding: 8px; /* Dodaje wewnętrzne odstępy o wielkości 8 pikseli wewnątrz elementów */
+    margin-top: 5px; /* Dodaje górny margines o wielkości 5 pikseli, aby oddzielić elementy od siebie */
+    width: 100%; /* Ustawia szerokość elementów na 100% dostępnej szerokości */
+    max-width: 300px; /* Ustawia maksymalną szerokość elementów na 300 pikseli */
+    box-sizing: border-box; /* Ustawia model pudełkowy tak, aby padding i border były wliczane w całkowitą szerokość i wysokość elementu */
+}
+
+button {
+    background-color: #4CAF50; /* Ustawia kolor tła przycisków na zielony (#4CAF50) */
+    color: white; /* Ustawia kolor tekstu przycisków na biały */
+    border: none; /* Usuwa obramowanie przycisków */
+    cursor: pointer; /* Ustawia kursor na wskaźnik (rękę) po najechaniu na przycisk */
+}
+
+button:hover {
+    background-color: #45a049; /* Zmienia kolor tła przycisków na ciemniejszy zielony (#45a049) po najechaniu */
+}
+
+a {
+    color: #0066cc; /* Ustawia kolor tekstu linków na niebieski (#0066cc) */
+    text-decoration: none; /* Usuwa podkreślenie linków */
+}
+
+a:hover {
+    text-decoration: underline; /* Dodaje podkreślenie linków po najechaniu kursorem */
+}
