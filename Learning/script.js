@@ -6,37 +6,38 @@ function calculate() {
 
     switch(operator) {
         case '+':
-            result = num1 + num2
+            result = num1 + num2;
             break;
         case '-':
-            result = num1 - num2
+            result = num1 - num2;
             break;
         case '*':
-            result = num1 * num2
+            result = num1 * num2;
             break;
         case '/':
-            result = num1 / num2
+            result = num1 / num2;
             break;
         default:
-            result = "Nieprawidłowy operator"
+            result = 'Nieprawidłowy operator';
     }
 
-    alert("Wynik to: " + result)
-
+    alert('Wynik to: ' + result);
 }
 
 function validateForm() {
-    const password = document.getElementById('password');
-    const confirmPassword = document.getElementById('confirmPassword');
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
 
-    if(password !== confirmPassword) {
-        alert("Hasła nie są zgodne");
+    // Sprawdzenie, czy hasła są zgodne
+    if (password !== confirmPassword) {
+        alert('Hasła nie są zgodne!');
         return false;
     }
 
-    const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/;
-    if(!passwordPattern.test(password)) {
-        alert("At least 1 Uppercase, 1 Lowercase, 1 Number, 1 Symbol, symbol allowed --> !@#$%^&*_=+-, Min 8 chars and Max 12 chars")
+    // Sprawdzenie poziomu trudności hasła
+    const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}$/;
+    if (!passwordPattern.test(password)) {
+        alert('Hasło musi mieć co najmniej 8 znaków, zawierać przynajmniej jedną cyfrę, jedną małą literę, jedną wielką literę i jeden znak specjalny (@, #, $, %, ^, &, +, =).');
         return false;
     }
 
